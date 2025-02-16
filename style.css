@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgb(241, 240, 240);
+  background-color: rgb(228, 228, 228);
   margin: 0;
   padding: 0;
 }
@@ -21,7 +21,7 @@ header {
   width: 100%;
   height: 100px;
   gap: 15%;
-  background-color: rgba(206, 188, 188, 0.923);
+  background-color: rgba(160, 152, 152, 0.923);
   z-index: 999;
 }
 
@@ -48,6 +48,7 @@ a {
   padding-top: 100px;
   display: flex;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 /* Hide the images by default */
@@ -141,10 +142,11 @@ a {
 
 /* Container holding the image and the text */
 .container {
-  display: flex; /* Ensure images are aligned side by side */
+  display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; /* Make sure the items wrap on smaller screens */
+  flex-wrap: wrap;
   gap: 20px; /* Adjust gap between the image blocks */
+  margin-top: 50px;
 }
 
 /* Wrapper around each image and its text block */
@@ -176,4 +178,97 @@ a {
   height: auto;
   display: block;
   border-radius: 8px; /* Optional: rounded corners for the images */
+}
+
+/* Center the table & add spacing */
+section {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px; /* Space from previous text */
+}
+
+/* Table styling */
+table {
+  width: 90%; /* Larger size */
+  max-width: 900px;
+  border-collapse: collapse;
+  background-color: #f0f0f0; /* Light grey */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+/* Table Headers */
+th {
+  background-color: #333; /* Dark Grey */
+  color: white;
+  padding: 15px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+/* Table Cells */
+td {
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Alternate Row Colours */
+tr:nth-child(odd) {
+  background-color: #e0e0e0; /* Lighter Grey */
+}
+
+tr:nth-child(even) {
+  background-color: #d0d0d0; /* Slightly Darker Grey */
+}
+
+/* Forest Green Highlight for A6 Sportback e-Tron */
+td.highlight {
+  background-color: #228b22; /* Forest Green */
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+/* General footer styling */
+footer {
+  background-color: rgba(160, 152, 152, 0.923);
+  color: black;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Footer sections */
+.footer-section {
+  margin: 10px;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 5px 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #f0f0f0;
 }
